@@ -1,5 +1,3 @@
-console.log("Up and Runing");
-
 var cards = [
   {
     rank: "queen",
@@ -24,23 +22,57 @@ var cards = [
 ];
 var cardInPlay = [];
 
-var checkForMatch = function(){
-  if (cardInPlay.length === 2) {
-    if (cardInPlay[0] === cardInPlay[1]){
-      alert("You found a match!");
-    }else{
-      alert("Sorry, try again.");
-    }
+var createboard = function(){
+  cardInPlay = [];
+  for (var i = 0; i < cards.length; i++) {
+      var cardElement = document.createElement('img');
+      cardElement.setAttribute('src', 'images/back.png');
+      cardElement.setAttribute('data-id', i);
+      cardElement.addEventListener('click', flipCard);
+      document.getElementById('game-board').appendChild(cardElement);
   }
 }
-var flipCard = function(cardId){
 
-  console.log("User flipped " + cards[cardId].rank);
-  console.log("User flipped " + cards[cardId].suit);
-  console.log("User flipped " + cards[cardId].cardImage);
-  cardInPlay.push(cards[cardId].rank);
-  checkForMatch();
+var increaseScore = function(){
+  var currentScore = document.getElementById('score').textContent;
+  var newScore = parseInt(currentScore) + 1;
+  document.getElementById('score').textContent = newScore;
 }
 
-flipCard(0);
-flipCard(2);
+var checkForMatch = function(){
+    if (cardInPlay[0] === cardInPlay[1]){
+      alert("You found a match!");
+      increaseScore();
+      resetBoard();
+      createboard();
+    }else{
+      alert("Sorry, try again.");
+      resetBoard();
+      createboard();
+    }
+}
+
+var flipCard = function(){
+  var cardId = this.getAttribute('data-id')
+  cardInPlay.push(cards[cardId].rank);
+  this.setAttribute('src', cards[cardId].cardImage)
+  if (cardInPlay.length === 2) {
+    checkForMatch();
+  }
+}
+
+var resetBoard = function(){
+  for (var i = 0; i < 4; i++){
+    cardsToRemove = document.getElementById('game-board');
+    cardsToRemove.removeChild(cardsToRemove.firstChild);
+  }
+}
+
+var resetCounter = function(){
+  document.getElementById('score').textContent = 0;
+  resetBoard();
+  createboard();
+}
+
+createboard();
+document.getElementById('reset').addEventListener('click', resetCounter);
