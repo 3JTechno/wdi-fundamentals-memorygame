@@ -76,12 +76,13 @@ button{
 .score-points{
 	display: inline;
 	text-transform: uppercase;
-}
+} 	
 .copyright{
 	float: left;
+	padding: 0 10px;
 }
 .message{
-	float:right;
+	float:left;
 }
 .clearfix:after {
 visibility: hidden;
