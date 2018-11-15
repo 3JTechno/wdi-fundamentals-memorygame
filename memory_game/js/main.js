@@ -25,6 +25,8 @@ var cardInPlay = [];
 
 var createboard = function(){
   cardInPlay = [];
+  //Log an issue if cardInPlay object in not empty
+  console.assert(cardInPlay !== null, cardInPlay);
   shuffleCards();
   for (var i = 0; i < cards.length; i++) {
       var cardElement = document.createElement('img');
@@ -44,6 +46,8 @@ var shuffleCards = function(){
     cards[i] = cards[newPosition]
     cards[newPosition] = cardToSwitch;
   }
+  //Log the cards in the console after shuffling
+  console.table(cards);
 }
 
 var flipCard = function(){
