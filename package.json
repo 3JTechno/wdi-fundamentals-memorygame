@@ -2,7 +2,7 @@
   "name": "wdi-fundamentals-memorygame",
   "version": "1.0.0",
   "description": "This program is a memory game developed as a pre-work for G.A. WDI program.",
-  "main": "memory_game/index.html",
+  "main": "index.php",
   "scripts": {
     "test": "",
     "start":"memory_game/index.html"
