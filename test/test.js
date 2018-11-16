@@ -24,4 +24,4 @@ describe('shuffle Cards', function(){
     //after shuffling.
     chai.assert.equal(cards.length, 4);
   });
-})
+});
