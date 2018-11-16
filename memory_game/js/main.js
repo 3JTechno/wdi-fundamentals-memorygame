@@ -23,7 +23,7 @@ var cards = [
 
 var cardInPlay = [];
 
-var createboard = function(){
+var createBoard = function(){
   cardInPlay = [];
   //Log an issue if cardInPlay object in not empty
   console.assert(cardInPlay !== null, cardInPlay);
@@ -67,11 +67,11 @@ var checkForMatch = function(){
       alert("You found a match!");
       increaseScore();
       resetBoard();
-      createboard();
+      createBoard();
     }else{
       alert("Sorry, try again.");
       resetBoard();
-      createboard();
+      createBoard();
     }
 }
 
@@ -92,8 +92,8 @@ var resetBoard = function(){
 var resetCounter = function(){
   document.getElementById('score').textContent = 0;
   resetBoard();
-  createboard();
+  createBoard();
 }
 
-createboard();
+createBoard();
 document.getElementById('reset').addEventListener('click', resetCounter);

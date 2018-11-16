@@ -1,0 +1,24 @@
+{
+  "name": "wdi-fundamentals-memorygame",
+  "version": "1.0.0",
+  "description": "This program is a memory game developed as a pre-work for G.A. WDI program.",
+  "main": "memory_game/index.html",
+  "scripts": {
+    "test": "node_modules/mocha/bin/mocha test/test2.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3JTechno/wdi-fundamentals-memorygame.git"
+  },
+  "author": "Jeremy Giraudet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/3JTechno/wdi-fundamentals-memorygame/issues"
+  },
+  "homepage": "https://github.com/3JTechno/wdi-fundamentals-memorygame#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  }
+}
