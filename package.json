@@ -4,7 +4,8 @@
   "description": "This program is a memory game developed as a pre-work for G.A. WDI program.",
   "main": "memory_game/index.html",
   "scripts": {
-    "test": ""
+    "test": "",
+    "start":"memory_game/index.html"
   },
   "repository": {
     "type": "git",
