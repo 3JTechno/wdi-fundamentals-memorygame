@@ -1,3 +1,7 @@
 language: node_js
 node_js:
  - "node"
+deploy:
+  provider: heroku
+  api_key: 01488253-a490-406c-b9ad-eb7ac1a59fb6
+  app: vast-forest-37635
