@@ -5,5 +5,6 @@ deploy:
   provider: heroku
   api_key:
     secure: "01488253-a490-406c-b9ad-eb7ac1a59fb6"
+  app: vast-forest-37635
 on:
     all_branches: true
