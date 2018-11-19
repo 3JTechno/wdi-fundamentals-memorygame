@@ -1,7 +1,8 @@
 language: node_js
 node_js:
- - "node"
+- node
 deploy:
   provider: heroku
-  api_key: 01488253-a490-406c-b9ad-eb7ac1a59fb6
-  app: vast-forest-37635
+  api_key:
+    secure: Y+aTK1Y+5Qe/trUytSb45jspL//4pbIRLsJhk0PQ+AIfXDdalJyaegWNNOMKiS1zERtnE4Doa6rayzbgDHywC6FNCP7LCbrG7FxkR7Tcnt6EvMMZXd8G/5hasLopNFUATAxFvPNXgm8BvsyoXphK+b5VFb7E9VobCm8endkszHxUkEq1nPo6X7LdwLZRqKnsPSwpS0RUOwgsNO9Ooi3ntxWVK13xp1i1a1lKYjwnIk31wrikbXxpAzxzRjseeNCXZOWPP+BPNPOhTNVMU/rACk6Lrzi/5PIXkAJ8m38uWtcbqSQsoqhp1Kc7D38BowCQNBFrYtWGOYYOG7eSP1TJLrwxjqisSY3Bat/L96TWLTjqMeY0maJ6HKRLMmEKq0ncLYrN2S6NUG8wj7K7xovWeF9HvhY57LS0/l7gS4Fonewx/Y53rDuRpisUaaxH1ryiURVM7eDFl5ZDnWRD9JMDa36yUczKPXEcjslU8aK5UkhzKNmJ6OwhTgCJRHFKyKLJpj0X6WGyjZ9l+yVcHDjeRlJny9k9VQAGxpm/KoHQO+PLmNnqBfMEgIjpQvLuc/TQgrHybIge6WDRR9ZTzqYXDPmfz+QU17y54JCal/aomhoJCzRf82GuLvJMHKBekfcFcMoAOzf0L0gg35GD/NCOvTCN8CTiKvwHmBaaegIVpeo=
+    app: vast-forest-37635
