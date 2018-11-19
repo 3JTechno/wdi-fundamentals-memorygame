@@ -3,7 +3,8 @@ node_js:
 - node
 deploy:
   provider: heroku
-  api_key: 895d2921-ce1d-4511-86bb-a6979cfa0ba1
+  api_key:
+    secure: aECLiXoPQFbDRPYF2zGKOQVfdEhfPUtTk6vJHuEUn9df5E6me56KrdqQwoKajZbLuNeiFRU9EqAMs1aFXbIATtpqQbwWSPYciUySxVILa62SzwOlmo+9QmAcOt/6nU15WQsuCEqbQKWcSRDSGQing0y0Q5WaHquanf2MOlHpYh/zA/BL2IiDLcK9ID+ZqWIKK4GbXXYStXnvOJbP8vk+TirL5cJBa0hBz+4KX77C6Cfkudjywyu9RsdXZSSf8DQKLmaqwQDqDdEZXyRyJwOXdGF4+V5hzCar00wEGwMAOvoOEvMSoowqn8D419UGHbmBKkuC52i2od+u2PE4Awwp/2H94AFEwfMknkyPMH4bkQxJaab2OA/4IeK0GxU3z4QtGycA+Ry6BN4fr5tF8XDh/z/f+byIHuU5pphmnFS0P7cPrP4I4AWcbx3mxhsQAPWdabowGnQq5bVhzgFwc6vbuNPTNAIbV2/fafGB9K/1PpzTcC3av7xPJuAzoKBXDJb82Dhh9gUg7tsfPwIH6cFuF4iWlLTfydFZQ5lroUrMSF5tKOkH5LBL9IJjj4lrDnf1lcblRuxquQrxl4RSrscD6cLHH3/knU7M475BCOFbOMz+p+pDNjvezmKbodLxX7vCFabM8uRtS29Y6hQsj9tpnoSS69AhR55r2Z2+fXbw+9E=
   app: vast-forest-37635
   on:
     repo: 3JTechno/wdi-fundamentals-memorygame
