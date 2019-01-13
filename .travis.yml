@@ -1,9 +1,0 @@
-language: node_js
-node_js:
-- node
-deploy:
-  provider: heroku
-  api_key: $HEROKU_API_KEY
-  app: vast-forest-37635
-  on:
-    repo: 3JTechno/wdi-fundamentals-memorygame
